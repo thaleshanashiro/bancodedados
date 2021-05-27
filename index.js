@@ -7,7 +7,7 @@ var cors = require ('cors');
 app.use(cors());
 
 //porta que estou ouvindo
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 app.get('/',function (req, res) {
 res.send("<h2>Times do campeonato brasileiro 2021, serie A:</h2>");
